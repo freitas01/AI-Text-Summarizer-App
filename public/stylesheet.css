@@ -1,0 +1,139 @@
+/* Estilo para o corpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a40; /* Azul escuro */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Caixa de texto principal */
+.text-box {
+  width: 90%;
+  max-width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e6e6e6; /* Cinza claro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+/* Área de texto */
+textarea {
+  width: 100%;
+  max-width: 400px; /* Largura máxima definida */
+  height: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  background-color: #f2f2f2; /* Fundo mais claro */
+  margin-bottom: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Estilo para o texto informativo */
+.text-container {
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza o texto */
+  padding: 20px; /* Adiciona margem interna */
+  color: #fff; /* Texto em branco */
+}
+
+/* Botão de envio */
+.submit-button {
+  background-color: #ff8c42; /* Laranja */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  max-width: 200px; /* Para limitar a largura */
+}
+
+.submit-button:hover {
+  background-color: #e07a36; /* Tom mais escuro de laranja */
+}
+
+/* Botão desabilitado */
+.submit-button:disabled {
+  background-color: #ff8c42;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  padding: 15px;
+  background-color: #ff8c42; /* Fundo laranja */
+  border-radius: 8px;
+  box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Estilo de chamada para ação */
+.cta-section {
+  background-color: #f0f0f5;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  padding: 12px 25px;
+  background-color: #ff8c42;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e07a36;
+}
+
+img {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-box {
+    width: 90%;
+  }
+
+  textarea {
+    height: 150px;
+  }
+}
